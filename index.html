@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Changer</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      body {
+        background-color: #0f172a;
+        color: #fff;
+        font-size: 60px;
+        height: 100vh;
+        width: 100%;
+      }
+      .input-wrapper {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        padding: 25px;
+        background-color: #e8f0fe27;
+        border: 1px solid #e8f0fe27;
+      }
+
+      .input-wrapper input {
+        height: 45px;
+        width: calc(100% - 45px);
+        border: 1px solid #e8f0fe88;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+        padding: 0px 15px;
+        background-color: transparent;
+        position: relative;
+        color: #fff;
+        font-weight: 500;
+        max-width: 320px;
+      }
+
+      .input-wrapper button {
+        height: 45px;
+        width: 45px;
+        border: 1px solid #e8f0feab;
+        border-radius: 0 5px 5px 0;
+        background-color: #e8f0fe;
+        font-weight: 800;
+        cursor: pointer;
+      }
+
+      #root {
+        height: calc(100vh - 97px);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="input-wrapper">
+      <input type="text" placeholder="Enter your Name" id="inp" />
+      <button id="goBTN">GO!</button>
+    </div>
+    <div id="root"></div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
